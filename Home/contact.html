@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Nunulogo.jpeg" type="png">
+</head>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="Nunulogo.jpeg" alt="Logo">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="hamburger"></div>
+    </div>
+    <ul class="center-links">
+      <a href="index.html">Home</a>
+      <a href="applist.html">Product</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a href="tos.html">Term of Service</a>
+    </ul>
+    <!-- Hamburger menu links -->
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="applist.html">Product</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="tos.html">Term of Service</a></li>
+    </ul>
+  </nav>
+
+<script>
+  const navbar = document.querySelector('.navbar');
+let isNavbarAnimated = false;
+
+function animateNavbarOnScroll() {
+  if (window.scrollY > 0 && !isNavbarAnimated) {
+    navbar.classList.add('navbar-scrolled');
+    isNavbarAnimated = true;
+  } else if (window.scrollY === 0 && isNavbarAnimated) {
+    navbar.classList.remove('navbar-scrolled');
+    isNavbarAnimated = false;
+  }
+}
+
+window.addEventListener('scroll', animateNavbarOnScroll);
+
+function toggleMenu() {
+    const centerLinks = document.getElementById("centerLinks");
+    centerLinks.classList.toggle("show-mobile-menu");
+}
+
+</script>
+
+<script>
+
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("show");
+}
+
+</script>
+
+
+
+
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <br>
+  </header>
+
+  <main>
+    <div class="contact-links">
+        <div class="contact-icon">
+            <a href="https://wa.me/6285889247196" target="_blank" data-tooltip="WhatsApp">
+            <img src="whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+        <div class="contact-icon">
+            <a href="https://www.instagram.com/wisnugalih.p/" target="_blank" data-tooltip="Instagram">
+            <img src="instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <div class="contact-icon">
+            <a href="https://discord.gg/SyndromID" target="_blank" data-tooltip="Discord">
+            <img src="discord.png" alt="Discord">
+            </a>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
+
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  color: #000000;
+  padding: 30px 0;
+
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-icon {
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 20px;
+}
+
+.contact-icon a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.contact-icon img {
+  width: 80px; /* Adjust the icon size as needed */
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon a:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon .tooltip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.contact-icon:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-100%); /* Move the tooltip up slightly */
+}
+
+.contact-links a {
+  margin: 10px;
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.contact-links a:hover {
+  transform: translateY(-5px);
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.contact-links a:hover .tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/* ===== Navbar Section =====*/
+
+body {
+  margin: 0;
+  padding-top: 60px;
+  background-color: #f1f1f1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #f1f1f1;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  padding-inline: 20px;
+}
+
+.navbar a.active {
+  color: red;
+}
+
+.navbar-scrolled {
+  background-color: #ffffff; /* Change to the desired background color when scrolled */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a box shadow for a subtle effect */
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  padding-left: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.center-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.menu {
+  display: none;
+}
+
+.center-links a {
+  margin: 0 90px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+}
+
+.center-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.center-links a:hover {
+  color: #ff5e3a;
+}
+
+.center-links a:hover::after {
+  transform: scaleX(1);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .listing-section {
+    width: 140%;
+    float: left;
+    padding: 1%;
+    border-bottom: 0.01em solid #dddbdb;
+  }
+  
+  .product {
+    float: left;
+    width: 69%;
+    border-radius: 2%;
+    margin: 1%;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  /* Hide the regular menu on smaller screens */
+  .center-links {
+    display: none;
+  }
+
+  /* Display the hamburger menu on smaller screens */
+  .menu-toggle {
+    display: flex;
+    cursor: pointer;
+    height: 50%;
+  }
+
+  /* Style the hamburger icon */
+  .menu-toggle .hamburger,
+  .menu-toggle .hamburger:before,
+  .menu-toggle .hamburger:after {
+    content: "";
+    display: block;
+    background-color: #333;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  /* Position the elements of the hamburger icon */
+  .menu-toggle .hamburger {
+    position: relative;
+    margin: auto;
+  }
+
+  .menu-toggle .hamburger:before {
+    position: absolute;
+    top: -8px;
+  }
+
+  .menu-toggle .hamburger:after {
+    position: absolute;
+    bottom: -8px;
+  }
+
+  /* Animate the hamburger icon for open and close states */
+  .menu-toggle.active .hamburger {
+    transform: rotate(45deg);
+  }
+
+  .menu-toggle.active .hamburger:before,
+  .menu-toggle.active .hamburger:after {
+    opacity: 0;
+  }
+
+  /* Styling for the menu container */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .menu.show {
+    display: flex;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  /* Style the links inside the menu */
+  .menu li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.2s;
+  }
+
+  .menu li a:hover {
+    color: #ff5e3a;
+  }
+
+  .logo img {
+    height: 50px;
+    width: auto;
+    padding-left: 10px;
+  }
+}
+
+</style>
+
+<script>
+    // Show tooltips on app icons
+const appIcons = document.querySelectorAll('.contact-links a');
+
+
+  // Position the tooltip based on whether the user is on a desktop or mobile device
+  const isDesktop = window.innerWidth >= 768;
+  if (isDesktop) {
+    tooltip.style.top = this.offsetTop + 'px';
+    tooltip.style.left = this.offsetLeft + this.offsetWidth / 2 - tooltip.offsetWidth / 2 + 'px';
+  } else {
+    tooltip.style.bottom = this.offsetHeight + 5 + 'px';
+    tooltip.style.left = '50%';
+    tooltip.style.transform = 'translateX(-50%)';
+
+  this.appendChild(tooltip);
+  }
+
+function removeTooltip(e) {
+  const tooltip = this.querySelector('.tooltip');
+  if (tooltip) {
+    this.removeChild(tooltip);
+  }
+}
+
+appIcons.forEach(icon => {
+  icon.addEventListener('mouseenter', showTooltip);
+  icon.addEventListener('mouseleave', removeTooltip);
+});
+</script>

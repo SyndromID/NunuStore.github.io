@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="appstyle.css">
+  <!DOCTYPE html>
+  <html lang="en">
+    <title>Product</title> 
+    <link rel="icon" href="Nunulogo.jpeg" type="png">
+
+  <nav class="navbar">
+    <div class="logo">
+        <img src="Nunulogo.jpeg" alt="Logo">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="hamburger"></div>
+    </div>
+    <ul class="center-links">
+      <a href="index.html">Home</a>
+      <a class="active" href="applist.html">Product</a>
+      <a href="contact.html">Contact</a>
+      <a href="tos.html">Term of Service</a>
+    </ul>
+    <!-- Hamburger menu links -->
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="applist.html">Product</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="tos.html">Term of Service</a></li>
+    </ul>
+  </nav>
+
+<script>
+  const navbar = document.querySelector('.navbar');
+let isNavbarAnimated = false;
+
+function animateNavbarOnScroll() {
+  if (window.scrollY > 0 && !isNavbarAnimated) {
+    navbar.classList.add('navbar-scrolled');
+    isNavbarAnimated = true;
+  } else if (window.scrollY === 0 && isNavbarAnimated) {
+    navbar.classList.remove('navbar-scrolled');
+    isNavbarAnimated = false;
+  }
+}
+
+window.addEventListener('scroll', animateNavbarOnScroll);
+
+function toggleMenu() {
+    const centerLinks = document.getElementById("centerLinks");
+    centerLinks.classList.toggle("show-mobile-menu");
+}
+
+</script>
+
+<script>
+
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("show");
+}
+
+</script>
+
+  <div class="listing-section">
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-netflix">
+        </div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2>
+        <h3 class="price">NETFLIX PREMIUM</h3>
+        <p class="description"></p>
+        <a href="Apps/netflix.html">
+        <button class="button" name="item-1-button" id="button">
+          Deskripsi Produk
+        </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-spotify"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2>
+        <h3 class="price">SPOTIFY PREMIUM</h3>
+        <p class="description"></p>
+        <a href="Apps/spotify.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-viu"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2><br>
+        <h3 class="price">VIU PREMIUM</h3>
+        <p class="description"></p>
+        <a href="Apps/viu.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-prime"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2>
+        <h3 class="price">PRIME VIDEO</h3>
+        <p class="description"></p>
+        <a href="Apps/prime.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-youtube"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2>
+        <h3 class="price">YOUTUBE PREMIUM</h3>
+        <p class="description"></p>
+        <a href="Apps/youtube.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-vidio"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2>
+        <h3 class="price">VIDIO PLATINUM</h3>
+        <p class="description"></p>
+        <a href="Apps/vidio.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-canva"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Editing Apps</h2>
+        <h3 class="price">CANVA PRO</h3>
+        <p class="description"></p>
+        <a href="Apps/canva.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-bstation"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2>
+        <h3 class="price">BSTATION PREMIUM</h3>
+        <p class="description"></p>
+        <a href="Apps/bstation.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-iqiyi"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2>
+        <h3 class="price">IQIYI PREMIUM</h3>
+        <p class="description"></p>
+        <a href="Apps/iqiyi.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-wetv"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2>
+        <h3 class="price">WETV VIP</h3>
+        <p class="description"></p>
+        <a href="Apps/wetv.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-hbo"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2>
+        <h3 class="price">HBO GO ASIA</h3>
+        <p class="description"></p>
+        <a href="Apps/hbogo.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-appmus"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Streaming Apps</h2>
+        <h3 class="price">APPLE MUSIC</h3>
+        <p class="description"></p>
+        <a href="Apps/appmus.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-picsart"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Editing Apps</h2>
+        <h3 class="price">PicsArt Gold</h3>
+        <p class="description"></p>
+        <a href="Apps/picsart.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-remini"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Editing Apps</h2>
+        <h3 class="price">Remini</h3>
+        <p class="description"></p>
+        <a href="Apps/remini.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-alight"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Editing Apps</h2>
+        <h3 class="price">Alight Motion</h3>
+        <p class="description"></p>
+        <a href="Apps/alight.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-scribd"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Premium Apps</h2>
+        <h3 class="price">Scribd</h3>
+        <p class="description"></p>
+        <a href="Apps/scribd.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-nitro1"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Social Apps</h2>
+        <h3 class="price">DISCORD NITRO ALL</h3>
+        <p class="description"></p>
+        <a href="Apps/discord1.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-nitro2"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Social Apps</h2>
+        <h3 class="price">DISCORD NITRO NEW</h3>
+        <p class="description"></p>
+        <a href="Apps/discord2.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-chatgpt"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Premium Apps</h2>
+        <h3 class="price">ChatGPT Plus</h3>
+        <p class="description"></p>
+        <a href="Apps/chatgpt.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-gmail"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Social Apps</h2>
+        <h3 class="price">GMAIL ACCOUNT</h3>
+        <p class="description"></p>
+        <a href="Apps/gmail.html">
+          <button class="button" name="item-1-button" id="button">
+          Deskripsi Produk
+        </button>
+      </a>
+    </div>
+  </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-boost"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Digital Services</h2>
+        <h3 class="price">Boost DC Server</h3>
+        <p class="description"></p>
+        <a href="Apps/boost.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-tugas"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Digital Services</h2>
+        <h3 class="price">Tugas Sekolah</h3>
+        <p class="description"></p>
+        <a href="Apps/tugas.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-sosmed"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">Digital Services</h2>
+        <h3 class="price">Suntik Media Sosial</h3>
+        <p class="description"></p>
+        <a href="Apps/sosmed.html">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="product">
+      <div class="image-box">
+        <div class="images" id="image-soon"></div>
+      </div>
+      <div class="text-box">
+        <h2 class="item">COMING SOON</h2>
+        <h3 class="price">COMING SOON</h3>
+        <p class="description"></p>
+        <a href="#">
+          <button class="button" name="item-1-button" id="button">
+            Deskripsi Produk
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  
+</head>
+</html> 

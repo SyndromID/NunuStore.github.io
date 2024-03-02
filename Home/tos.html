@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Nunulogo.jpeg" type="png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Nunulogo.jpeg" alt="Logo">
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <div class="hamburger"></div>
+        </div>
+        <ul class="center-links">
+          <a href="index.html">Home</a>
+          <a href="applist.html">Product</a>
+          <a href="contact.html">Contact</a>
+          <a class="active" href="tos.html">Term of Service</a>
+        </ul>
+        <!-- Hamburger menu links -->
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="applist.html">Product</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="tos.html">Terms of Service</a></li>
+        </ul>
+      </nav>
+    
+    <script>
+      const navbar = document.querySelector('.navbar');
+    let isNavbarAnimated = false;
+    
+    function animateNavbarOnScroll() {
+      if (window.scrollY > 0 && !isNavbarAnimated) {
+        navbar.classList.add('navbar-scrolled');
+        isNavbarAnimated = true;
+      } else if (window.scrollY === 0 && isNavbarAnimated) {
+        navbar.classList.remove('navbar-scrolled');
+        isNavbarAnimated = false;
+      }
+    }
+    
+    window.addEventListener('scroll', animateNavbarOnScroll);
+    
+    function toggleMenu() {
+        const centerLinks = document.getElementById("centerLinks");
+        centerLinks.classList.toggle("show-mobile-menu");
+    }
+    
+    </script>
+
+  <header>
+    <h1>Terms of Service</h1>
+  </header>
+
+  <!-- Rest of the HTML remains the same -->
+
+<main>
+    <section class="section">
+      <h2>Bagian 1 : Tentang Order</h2>
+      <p>
+        • Semua Orderan bersifat NO REFUND
+    <br>• Jika produk (yang bergaransi) bermasalah akan diganti yang baru (replace)
+    <br>• Replacement diberikan jika produk masih dalam masa garansi
+    <br>• Barang yang sudah dibeli tidak bisa dikembalikan
+    <br>• Selalu menyertakan bukti transfer berupa foto / screenshot
+    <br>• Semua produk memiliki waktu proses paling lama 2x24 Jam
+    <br>• Jika lebih dari 48 Jam, akan di refund
+    <br>• NO RUSH ORDER ! 
+    <br><br>
+      </p>
+      <button class="read-more-btn">Baca Selengkapnya</button>
+    </section>
+  
+    <section class="section">
+      <h2>Bagian 2 : Tentang Produk</h2>
+      <p>
+        • Mohon tidak mengotak-atik akun yang diberikan (jika produk yang dibeli berasal dari akun seller)
+    <br>• Dilarang mengubah payment method / sejenisnya
+    <br>• Jika dirasa ada masalah dengan produknya, bisa hubungi kami, jangan otak-atik sendiri
+    <br>• Mohon ikuti perintah yang diberikan saat produk dikirimkan
+    <br><br>
+      </p>
+      <button class="read-more-btn">Baca Selengkapnya</button>
+    </section>
+
+    <section class="section">
+        <h2>Bagian 3 : Tentang Garansi</h2>
+        <p>
+            • Garansi bisa dilakukan jika produk masih dalam masa garansi
+        <br>• Proses Garansi 3x24 Jam sejak laporan, (tergantung situasi, kondisi dan toleransi)
+        <br>• NO RUSH (Jangan di buru-buruin)
+        <br><br>
+        Catatan :
+        <br>Membeli = Menerima TOS ini
+        <br>Kami berhak mencabut garansi anda jika memang dilihat adanya kecurigaan
+        <br>Melanggar TOS = Garansi hangus, akun di tarik, Tidak ada pengembalian dana
+        <br><br>
+          </p>
+        <button class="read-more-btn">Baca Selengkapnya</button>
+      </section>
+  
+    <!-- Add more sections here -->
+  
+    <footer>
+      <p>&copy; 2023 NAREL. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
+
+<style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  background-color: #f1f1f1;
+}
+
+header {
+  text-align: center;
+  color: black;
+  padding: 30px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+.section p {
+  margin-bottom: 0;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.section p {
+  margin-bottom: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.section .show-more {
+  max-height: 500px; /* Adjust the height as needed */
+}
+
+.section .read-more-btn {
+  display: block;
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.section .read-more-btn:hover {
+  background-color: #555;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #f1f1f1;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  padding-inline-end: 20px;
+}
+
+.navbar a.active {
+  color: red;
+}
+
+.navbar-scrolled {
+  background-color: #ffffff; /* Change to the desired background color when scrolled */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a box shadow for a subtle effect */
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  padding-left: 30px;
+}
+
+.center-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.menu {
+  display: none;
+}
+
+.center-links a {
+  margin: 0 100px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+}
+
+.center-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.center-links a:hover {
+  color: #ff5e3a;
+}
+
+.center-links a:hover::after {
+  transform: scaleX(1);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  /* Hide the regular menu on smaller screens */
+  .center-links {
+    display: none;
+  }
+
+  /* Display the hamburger menu on smaller screens */
+  .menu-toggle {
+    display: flex;
+    cursor: pointer;
+    height: 50%;
+  }
+
+  /* Style the hamburger icon */
+  .menu-toggle .hamburger,
+  .menu-toggle .hamburger:before,
+  .menu-toggle .hamburger:after {
+    content: "";
+    display: block;
+    background-color: #333;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  /* Position the elements of the hamburger icon */
+  .menu-toggle .hamburger {
+    position: relative;
+    margin: auto;
+  }
+
+  .menu-toggle .hamburger:before {
+    position: absolute;
+    top: -8px;
+  }
+
+  .menu-toggle .hamburger:after {
+    position: absolute;
+    bottom: -8px;
+  }
+
+  /* Animate the hamburger icon for open and close states */
+  .menu-toggle.active .hamburger {
+    transform: rotate(45deg);
+  }
+
+  .menu-toggle.active .hamburger:before,
+  .menu-toggle.active .hamburger:after {
+    opacity: 0;
+  }
+
+  /* Styling for the menu container */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .menu.show {
+    display: flex;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  /* Style the links inside the menu */
+  .menu li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.2s;
+  }
+
+  .menu li a:hover {
+    color: #ff5e3a;
+  }
+
+  .logo img {
+  height: 50px;
+  width: auto;
+  padding-left: 10px;
+  }
+}
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+</style>
+
+<script>
+    // Get all the "Read More" buttons
+const readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+// Add click event listener to each "Read More" button
+readMoreButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const section = button.parentNode; // Get the parent section of the button
+    const paragraph = section.querySelector('p'); // Get the paragraph in the section
+
+    // Toggle the class to show or hide the paragraph
+    paragraph.classList.toggle('show-more');
+
+    // Change the button text based on the paragraph visibility
+    button.textContent = paragraph.classList.contains('show-more') ? 'Tutup' : 'Baca Selengkapnya';
+  });
+});
+</script>
+
+<script>
+
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+    
+    </script>
+

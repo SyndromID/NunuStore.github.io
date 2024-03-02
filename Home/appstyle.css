@@ -1,0 +1,438 @@
+*
+/* AWAL SEGALANYA */
+{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.listing-section {
+  width: 100%;
+  float: left;
+  padding: 1%;
+  border-bottom: 0.01em solid #dddbdb;
+}
+
+.product {
+  float: left;
+  width: 23%;
+  border-radius: 2%;
+  margin: 1%;
+}
+
+
+.product:hover {
+  box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);  
+  -moz-box-shadow:    1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.image-box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2% 2% 0 0;
+}
+
+.images {
+  height: 15em;
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  border-radius: 2% 2% 0 0;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.images:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+/* IMAGES */
+#image-netflix {background-image: url("https://palpres.disway.id/upload/67b15c491b6e34b340f485c3858f73f7.jpeg")}
+
+#image-spotify {background-image: url("https://i.pinimg.com/564x/28/8e/6c/288e6c40a049f4c9b3639bd89e0c9f8e.jpg")}
+
+#image-viu {background-image: url("https://play-lh.googleusercontent.com/oFMDwVUvgnz8UMvcTlw-m5XUJHu7SflDs7FhVnjymRUrlOAYJJe9bFi_XwVKXKOGGA")}
+
+#image-prime {background-image: url("https://i.pinimg.com/564x/2d/33/5f/2d335f56bae5a87bb99bacd7675af220.jpg")}
+
+#image-youtube {background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/YouTube_play_button_square_%282013-2017%29.svg/1024px-YouTube_play_button_square_%282013-2017%29.svg.png")}
+
+#image-vidio {background-image: url("https://static-web.prod.vidiocdn.com/assets/logo/og-image-d05dbd2139d2276a7b552b63e0cd2b3af90c3abe26335cecd79515370ceca815.png")}
+
+#image-canva {background-image: url("https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/02/1644173537692-canva.png.jpg")}
+
+#image-bstation {background-image: url("https://api.duniagames.co.id/api/content/upload/file/11150509761674102982.jpg")}
+
+#image-iqiyi {background-image: url("https://gadgetren.com/wp-content/uploads/2021/09/iQiyi-Logo-Feature.jpg")}
+
+#image-wetv {background-image: url("https://asset.kompas.com/crops/YRa7s8JXjLMZVruSTTdKNqODT7A=/522x108:1818x972/750x500/data/photo/2022/02/22/6214dce8f305a.jpg")}
+
+#image-hbo {background-image: url("https://i.pinimg.com/564x/d3/80/cb/d380cb9f5b8245a5639adf220f6e7bf7.jpg")}
+
+#image-appmus {background-image: url("https://i.pinimg.com/564x/6f/5f/e5/6f5fe5d261b0b2f59c14bfaa0517bb15.jpg")}
+
+#image-picsart {background-image: url("https://armenpress.am/static/news/b/2023/02/1103272.jpg")}
+
+#image-remini {background-image: url("https://play-lh.googleusercontent.com/zg9WxLHFw4sDrsRJDz0AgGXY9UMQlZiRqIC9cE_xKiLedgjBKsysS-XLI_eNZCd8svs")}
+
+#image-alight {background-image: url("https://apksos.com/storage/images/alightmotion/guide/videoeditor/alightmotion.guide.videoeditor_1.png")}
+
+#image-scribd {background-image: url("https://cf.shopee.co.id/file/a507aa550672d363069594676436e3ae")}
+
+#image-nitro1 {background-image: url("https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_Discord_Nitro_2560x1440_withlogo_2560x1440-944994658df3b04d0c4940be832da19e")}
+
+#image-nitro2 {background-image: url("https://graph.digiseller.ru/img.ashx?id_d=3613578")}
+
+#image-chatgpt {background-image: url("https://freelogopng.com/images/all_img/1681038242chatgpt-logo-png.png")}
+
+#image-gmail {background-image: url("https://pemmzchannel.com/wp-content/uploads/2022/07/Nueva-apariencia-Gmail-1000x600-1.jpg")}
+
+#image-rdp1 {background-image: url("https://cdn.discordapp.com/attachments/1152526091479687168/1152526834374807582/pict1.png")}
+
+#image-rdp2 {background-image: url("https://cdn.discordapp.com/attachments/1152526091479687168/1152528040329494578/pict2.png")}
+
+#image-rdp3 {background-image: url("https://cdn.discordapp.com/attachments/1152526091479687168/1152528057077338242/pict3.png")}
+
+#image-rdp4 {background-image: url("https://cdn.discordapp.com/attachments/1152526091479687168/1152528071933562921/pict4.png")}
+
+#image-boost {background-image: url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/05/discord-server-boost-featured-image.png")}
+
+#image-tugas {background-image: url("https://studentspace.org.uk/assets/images/student-space_illustrations_studying.png")}
+
+#image-claim {background-image: url("https://cdn.discordapp.com/attachments/1121420469514535003/1121979562897723392/discord-nitro-free-trial-1.png")}
+
+#image-sosmed {background-image: url("https://global-uploads.webflow.com/5eb6815bc8e0bd376c3cae22/638e0d3f8cee32314161765b_Desain%20tanpa%20judul.jpg")}
+
+#image-soon {background-image: url("")}
+
+.text-box {
+  width: 100%;
+  float: left;
+  border: 0.01em solid #dddbdb;
+  background-color: white;
+  border-radius: 0 0 2% 2%;
+  padding: 1em;
+}
+
+h2, h3 {
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0.2em auto;
+}
+
+.item, .price {
+  clear: left;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.price {
+  color: rgb(243, 9, 134);
+  font-size: 13px;
+}
+
+.description, label, button, input {
+  float: left;
+  clear: left;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  margin: 0.2em auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #454c46;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1d211d;
+  transform: scale(1.05);
+}
+
+.button:active {
+  background-color: #454c46; /* Even darker green background color on click */
+  transform: scale(0.95);
+}
+
+input:focus {
+  outline-color: #fdf;
+}
+
+label {
+  width: 60%;
+}
+
+.text-box input {
+  width: 15%;
+  clear: none;
+}
+
+.text-box button {
+  margin-top: 1em;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  bottom: 0.1em;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  bottom: 0;
+  background-color: #fdf;
+}
+
+.table-heading, .table-content {
+  width: 75%;
+  margin: 1% 12.25%;
+  float: left;
+  background-color: #dfd;
+}
+
+.table-heading h2 {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+}
+
+/* ===== Navbar Section =====*/
+
+body {
+  margin: 0;
+  padding-top: 60px;
+  background-color: #f1f1f1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #f1f1f1;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  padding-inline: 20px;
+}
+
+.navbar a.active {
+  color: red;
+}
+
+.navbar-scrolled {
+  background-color: #ffffff; /* Change to the desired background color when scrolled */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a box shadow for a subtle effect */
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  padding-left: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.center-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.menu {
+  display: none;
+}
+
+.center-links a {
+  margin: 0 100px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+}
+
+.center-links a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.center-links a:hover {
+  color: #ff5e3a;
+}
+
+.center-links a:hover::after {
+  transform: scaleX(1);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .listing-section {
+    width: 140%;
+    float: left;
+    padding: 1%;
+    border-bottom: 0.01em solid #dddbdb;
+  }
+  
+  .product {
+    float: left;
+    width: 69%;
+    border-radius: 2%;
+    margin: 1%;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  /* Hide the regular menu on smaller screens */
+  .center-links {
+    display: none;
+  }
+
+  /* Display the hamburger menu on smaller screens */
+  .menu-toggle {
+    display: flex;
+    cursor: pointer;
+    height: 50%;
+  }
+
+  /* Style the hamburger icon */
+  .menu-toggle .hamburger,
+  .menu-toggle .hamburger:before,
+  .menu-toggle .hamburger:after {
+    content: "";
+    display: block;
+    background-color: #333;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  /* Position the elements of the hamburger icon */
+  .menu-toggle .hamburger {
+    position: relative;
+    margin: auto;
+  }
+
+  .menu-toggle .hamburger:before {
+    position: absolute;
+    top: -8px;
+  }
+
+  .menu-toggle .hamburger:after {
+    position: absolute;
+    bottom: -8px;
+  }
+
+  /* Animate the hamburger icon for open and close states */
+  .menu-toggle.active .hamburger {
+    transform: rotate(45deg);
+  }
+
+  .menu-toggle.active .hamburger:before,
+  .menu-toggle.active .hamburger:after {
+    opacity: 0;
+  }
+
+  /* Styling for the menu container */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    opacity: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .menu.show {
+    display: flex;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  /* Style the links inside the menu */
+  .menu li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.2s;
+  }
+
+  .menu li a:hover {
+    color: #ff5e3a;
+  }
+
+  .logo img {
+    height: 50px;
+    width: auto;
+    padding-left: 10px;
+  }
+}
